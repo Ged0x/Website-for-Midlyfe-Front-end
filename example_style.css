@@ -1,0 +1,253 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0px;
+    font-family: 'Granjon', "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-image: url("");
+    position: relative; /* Add this to establish a positioning context */
+    background-size: auto;/* Adjust the background size as needed */
+    /*background-image: url('Images_src/universe.jpg'); /* Replace with the path to your background image */
+    /*background-size: cover; /* Adjust as needed to cover the entire page */
+    /*background-position: center; /* Center the background image */
+    /*background-repeat: no-repeat; /* Prevent the background image from repeating */
+    /*margin: 0; /* Remove default margin */
+    /*padding: 0; /* Remove default padding */
+}
+
+@font-face {
+    font-family: 'Granjon';
+    src: url('Granjon.ttf') format('truetype');
+    /* Add other font formats if necessary for cross-browser compatibility */
+        
+}
+/* Create an overlay with a semi-transparent background color */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.044);  /* Adjust the opacity (last value) as needed */
+    z-index: -1;  /* Place the overlay behind the content */
+    backdrop-filter: blur(50px);
+
+}
+
+
+.navbar-container {
+    background-color: white;
+    box-shadow: 0px 4px 5px 0px rgba(67, 67, 67, 0.71);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(39, 39, 39, 0.71);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.71);
+    
+}
+.navbar {
+    max-width: 1560px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    left: 500;
+}
+
+.navbar-left svg {
+    width: 300px;
+    margin-right: 20px;
+    margin-left: -100px;
+    border-left: 500px;
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*.navbar-left div:hover,
+.information-bar:hover,
+.about-link:hover,
+.merch-link:hover,
+.portfolio-link:hover {
+    background-color: #00089f;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: colorChange 0.5s ease;
+*/
+/*}*/
+
+/*@keyframes colorChange {
+    0% {
+        background-color: rgb(112, 112, 158); /* Start with blue */
+   /* }
+    25% {
+        background-color: rgb(77, 99, 150); /* Transition to red halfway through */
+    /*}
+    50% {
+        background-color: rgb(66, 66, 154); /* Transition to green at the end */
+    /*}
+    75% {
+        background-color:rgb(36, 36, 157);
+    }
+    100% {
+        background-color:rgb(17, 17, 158);   
+    }*/
+
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin: 10px;
+}
+
+.find-a-store {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+.product img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.product {
+    display: flex;
+    box-shadow: 0px 4px 5px 0px rgba(46, 46, 46, 0.71);
+    -webkit-box-shadow: 0px 20px 25px 0px rgba(28, 28, 28, 0.71);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.71);
+}
+
+.product-left,
+.product-right {
+    max-width: 50%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+.product-title {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.product-container {
+    margin: 40px 0px 40px 0px;
+    display: flex;
+}
+
+.product-button {
+    border: 1px solid white;
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.product-button-white {
+    color: white;
+}
+
+.product-button-black {
+
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+
+
+.product-description {
+    text-align: center;
+    padding: 30px 60px 30px 60px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    padding: 50px;
+    text-align: center;
+}
+
+
+Nav{
+    background: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    height: 100px;
+    width: 50px;
+    margin-left: 20px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px; 
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: Bold;
+
+    
+}
+/*nav ul li a:hover{
+    color:white; /*change color
+
+}
+
+ a:hover{ /* transition color */
+ /*   background: rgb(19, 19, 186);
+    transition: .5s;
+ */   
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+
+    
